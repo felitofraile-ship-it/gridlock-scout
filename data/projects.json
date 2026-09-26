@@ -1,0 +1,763 @@
+[
+  {
+    "id": "DESC_1",
+    "utility": "DESC",
+    "name": "Stevens Creek - Hooks 115 kV / LR Plumb Branch 46 kV Rebuilds",
+    "description": "Stevens Creek–Hooks and LR Plumb Branch line rebuilds.",
+    "state": "SC",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -82.051362,
+        33.562599
+      ]
+    },
+    "locationQuality": "endpoint_only",
+    "locationNote": "Only the Stevens Creek endpoint is located in the starter workbook.",
+    "endpoints": [
+      {
+        "name": "Stevens Creek Sub",
+        "coordinates": [
+          -82.051362,
+          33.562599
+        ]
+      }
+    ],
+    "schedule": {
+      "constructionStart": null,
+      "plannedInService": "2024-12-31",
+      "note": "The starter workbook supplies an in-service target; a field-construction window has not been verified."
+    },
+    "source": {
+      "title": "Dominion 2024–2028 planned transmission projects",
+      "url": "https://www.scrtp.com/assets/pdfs/home/2024-2028-2million-and-above-project-descriptions.pdf",
+      "reference": "Sperry-Tech-Challenge.zip / Project Listings / Dominion Energy / 2024-2028-2million-and-above-project-descriptions.pdf"
+    },
+    "sourceChecked": "2026-09-26"
+  },
+  {
+    "id": "DESC_2",
+    "utility": "DESC",
+    "name": "Hooks - Thurmond 115 kV Tie: Rebuild",
+    "description": "Rebuild of the Hooks–Thurmond tie.",
+    "state": "SC",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -82.195931,
+        33.660127
+      ]
+    },
+    "locationQuality": "endpoint_only",
+    "locationNote": "Only the Thurmond endpoint is located in the starter workbook.",
+    "endpoints": [
+      {
+        "name": "Thurmond Sub",
+        "coordinates": [
+          -82.195931,
+          33.660127
+        ]
+      }
+    ],
+    "schedule": {
+      "constructionStart": null,
+      "plannedInService": "2024-12-31",
+      "note": "The starter workbook supplies an in-service target; a field-construction window has not been verified."
+    },
+    "source": {
+      "title": "Dominion 2024–2028 planned transmission projects",
+      "url": "https://www.scrtp.com/assets/pdfs/home/2024-2028-2million-and-above-project-descriptions.pdf",
+      "reference": "Sperry-Tech-Challenge.zip / Project Listings / Dominion Energy / 2024-2028-2million-and-above-project-descriptions.pdf"
+    },
+    "sourceChecked": "2026-09-26"
+  },
+  {
+    "id": "DESC_3",
+    "utility": "DESC",
+    "name": "Jasper - Okatie 230 kV #2: Construct",
+    "description": "Construct a roughly 6.5-mile, 230 kV line from Jasper to Okatie.",
+    "state": "SC",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -81.1246,
+          32.35912
+        ],
+        [
+          -81.032495,
+          32.333758
+        ]
+      ]
+    },
+    "locationQuality": "straight_line_approximation",
+    "locationNote": "Straight line between starter-workbook endpoints; the actual route may differ.",
+    "endpoints": [
+      {
+        "name": "Jasper Sub",
+        "coordinates": [
+          -81.1246,
+          32.35912
+        ]
+      },
+      {
+        "name": "Okatie Sub",
+        "coordinates": [
+          -81.032495,
+          32.333758
+        ]
+      }
+    ],
+    "schedule": {
+      "constructionStart": null,
+      "plannedInService": "2026-05-31",
+      "note": "The starter workbook supplies an in-service target; a field-construction window has not been verified."
+    },
+    "source": {
+      "title": "Dominion 2025–2029 planned transmission projects",
+      "url": "https://www.scrtp.com/assets/pdfs/home/2025-2029-2million-and-above-project-descriptions.pdf",
+      "reference": "Project 18 of 47"
+    },
+    "sourceChecked": "2026-09-26"
+  },
+  {
+    "id": "DESC_4",
+    "utility": "DESC",
+    "name": "Queensboro - Ft Johnson 115 kV & Queensboro-Bayfront 115 kV (Queensboro-James Island Sect)",
+    "description": "Queensboro–Fort Johnson and Queensboro–Bayfront line work.",
+    "state": "SC",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -79.967332,
+        32.722793
+      ]
+    },
+    "locationQuality": "endpoint_only",
+    "locationNote": "Only the Queensboro endpoint is located in the starter workbook.",
+    "endpoints": [
+      {
+        "name": "Queensboro Sub",
+        "coordinates": [
+          -79.967332,
+          32.722793
+        ]
+      }
+    ],
+    "schedule": {
+      "constructionStart": null,
+      "plannedInService": "2023-12-31",
+      "note": "The starter workbook supplies an in-service target; a field-construction window has not been verified."
+    },
+    "source": {
+      "title": "Dominion 2024–2028 planned transmission projects",
+      "url": "https://www.scrtp.com/assets/pdfs/home/2024-2028-2million-and-above-project-descriptions.pdf",
+      "reference": "Sperry-Tech-Challenge.zip / Project Listings / Dominion Energy / 2024-2028-2million-and-above-project-descriptions.pdf"
+    },
+    "sourceChecked": "2026-09-26"
+  },
+  {
+    "id": "DESC_5",
+    "utility": "DESC",
+    "name": "Okatie-Bluffton 115 kV: Rebuild",
+    "description": "Rebuild the Okatie–Bluffton 115 kV line.",
+    "state": "SC",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -81.032495,
+          32.333758
+        ],
+        [
+          -80.853384,
+          32.235027
+        ]
+      ]
+    },
+    "locationQuality": "straight_line_approximation",
+    "locationNote": "Straight line between starter-workbook endpoints; the actual route may differ.",
+    "endpoints": [
+      {
+        "name": "Okatie Sub",
+        "coordinates": [
+          -81.032495,
+          32.333758
+        ]
+      },
+      {
+        "name": "Bluffton Sub",
+        "coordinates": [
+          -80.853384,
+          32.235027
+        ]
+      }
+    ],
+    "schedule": {
+      "constructionStart": null,
+      "plannedInService": "2025-06-01",
+      "note": "The starter workbook supplies an in-service target; a field-construction window has not been verified."
+    },
+    "source": {
+      "title": "Dominion 2024–2028 planned transmission projects",
+      "url": "https://www.scrtp.com/assets/pdfs/home/2024-2028-2million-and-above-project-descriptions.pdf",
+      "reference": "Sperry-Tech-Challenge.zip / Project Listings / Dominion Energy / 2024-2028-2million-and-above-project-descriptions.pdf"
+    },
+    "sourceChecked": "2026-09-26"
+  },
+  {
+    "id": "GPC_1",
+    "utility": "GPC",
+    "name": "EVANS PRIMARY - THURMOND DAM (USA) #5 115KV REBUILD",
+    "description": "Rebuild of the Euchee Creek–Thurmond Dam segment, not the full Evans–Thurmond line.",
+    "state": "GA",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -82.195931,
+        33.660127
+      ]
+    },
+    "locationQuality": "endpoint_only",
+    "locationNote": "Shown at the known Thurmond endpoint; the work segment has not been traced.",
+    "endpoints": [
+      {
+        "name": "EVANS PRIMARY",
+        "coordinates": [
+          -82.168648,
+          33.543994
+        ]
+      },
+      {
+        "name": "THURMOND DAM #5",
+        "coordinates": [
+          -82.195931,
+          33.660127
+        ]
+      }
+    ],
+    "schedule": {
+      "constructionStart": null,
+      "plannedInService": "2033-06-01",
+      "note": "The starter workbook supplies an in-service target; a field-construction window has not been verified."
+    },
+    "source": {
+      "title": "Georgia Power 2025 IRP Volume 3 public disclosure",
+      "url": "https://psc.ga.gov/search/facts-document/?documentId=221233",
+      "reference": "Sperry-Tech-Challenge.zip / Project Listings / Georgia Power / 2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf"
+    },
+    "sourceChecked": "2026-09-26"
+  },
+  {
+    "id": "GPC_2",
+    "utility": "GPC",
+    "name": "SAV: MCINTOSH - PURRYSBURG 230KV REACTORS",
+    "description": "Install reactors at McIntosh and rebuild a short section there.",
+    "state": "GA",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -81.175112,
+        32.352116
+      ]
+    },
+    "locationQuality": "endpoint_only",
+    "locationNote": "Shown at the McIntosh point; the starter workbook has no precise work footprint.",
+    "endpoints": [
+      {
+        "name": "MCINTOSH",
+        "coordinates": [
+          -81.175112,
+          32.352116
+        ]
+      }
+    ],
+    "schedule": {
+      "constructionStart": null,
+      "plannedInService": "2026-06-01",
+      "note": "The starter workbook supplies an in-service target; a field-construction window has not been verified."
+    },
+    "source": {
+      "title": "Georgia Power 2025 IRP Volume 3 public disclosure",
+      "url": "https://psc.ga.gov/search/facts-document/?documentId=221233",
+      "reference": "Sperry-Tech-Challenge.zip / Project Listings / Georgia Power / 2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf"
+    },
+    "sourceChecked": "2026-09-26"
+  },
+  {
+    "id": "GPC_3",
+    "utility": "GPC",
+    "name": "SAV: GOSHEN (SAV) - MCINTOSH 115KV LINE REBUILD",
+    "description": "Rebuild the Goshen–Georgia Pacific (Rincon) section, not the full Goshen–McIntosh line.",
+    "state": "GA",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -81.209472,
+        32.248701
+      ]
+    },
+    "locationQuality": "endpoint_only",
+    "locationNote": "Shown at the Goshen endpoint; the exact rebuilt section has not been traced.",
+    "endpoints": [
+      {
+        "name": "GOSHEN",
+        "coordinates": [
+          -81.209472,
+          32.248701
+        ]
+      },
+      {
+        "name": "MCINTOSH",
+        "coordinates": [
+          -81.182105,
+          32.352116
+        ]
+      }
+    ],
+    "schedule": {
+      "constructionStart": null,
+      "plannedInService": "2027-06-01",
+      "note": "The starter workbook supplies an in-service target; a field-construction window has not been verified."
+    },
+    "source": {
+      "title": "Georgia Power 2025 IRP Volume 3 public disclosure",
+      "url": "https://psc.ga.gov/search/facts-document/?documentId=221233",
+      "reference": "Sperry-Tech-Challenge.zip / Project Listings / Georgia Power / 2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf"
+    },
+    "sourceChecked": "2026-09-26"
+  },
+  {
+    "id": "GPC_4",
+    "utility": "GPC",
+    "name": "MITCHELL - NORTH TIFTON 230KV RECONDUCTOR",
+    "description": "Reconductoring project between Mitchell and North Tifton.",
+    "state": "GA",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -84.133843,
+          31.447121
+        ],
+        [
+          -83.54913,
+          31.478089
+        ]
+      ]
+    },
+    "locationQuality": "straight_line_approximation",
+    "locationNote": "Straight line between starter-workbook endpoints; the actual route may differ.",
+    "endpoints": [
+      {
+        "name": "Mitchell Substation",
+        "coordinates": [
+          -84.133843,
+          31.447121
+        ]
+      },
+      {
+        "name": "North Tifton Substation",
+        "coordinates": [
+          -83.54913,
+          31.478089
+        ]
+      }
+    ],
+    "schedule": {
+      "constructionStart": null,
+      "plannedInService": "2025-05-01",
+      "note": "The starter workbook supplies an in-service target; a field-construction window has not been verified."
+    },
+    "source": {
+      "title": "Georgia Power 2025 IRP Volume 3 public disclosure",
+      "url": "https://psc.ga.gov/search/facts-document/?documentId=221233",
+      "reference": "Sperry-Tech-Challenge.zip / Project Listings / Georgia Power / 2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf"
+    },
+    "sourceChecked": "2026-09-26"
+  },
+  {
+    "id": "GPC_5",
+    "utility": "GPC",
+    "name": "JESUP - LUDOWICI PRIMARY 115KV REBUILD",
+    "description": "Rebuild of the Jesup–Ludowici Primary line.",
+    "state": "GA",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          -81.924947,
+          31.603106
+        ],
+        [
+          -81.743703,
+          31.721597
+        ]
+      ]
+    },
+    "locationQuality": "straight_line_approximation",
+    "locationNote": "Straight line between starter-workbook endpoints; the actual route may differ.",
+    "endpoints": [
+      {
+        "name": "JESUP",
+        "coordinates": [
+          -81.924947,
+          31.603106
+        ]
+      },
+      {
+        "name": "LUDOWICI PRIMARY",
+        "coordinates": [
+          -81.743703,
+          31.721597
+        ]
+      }
+    ],
+    "schedule": {
+      "constructionStart": null,
+      "plannedInService": "2025-06-01",
+      "note": "The starter workbook supplies an in-service target; a field-construction window has not been verified."
+    },
+    "source": {
+      "title": "Georgia Power 2025 IRP Volume 3 public disclosure",
+      "url": "https://psc.ga.gov/search/facts-document/?documentId=221233",
+      "reference": "Sperry-Tech-Challenge.zip / Project Listings / Georgia Power / 2025 IRP Volume 3 PUBLIC DISCLOSURE.pdf"
+    },
+    "sourceChecked": "2026-09-26"
+  },
+  {
+    "id": "DESC_URQUHART_AIKEN",
+    "utility": "DESC",
+    "state": "SC",
+    "name": "Urquhart–Aiken PSA 46 kV rebuild",
+    "description": "Planned rebuild of a roughly 4.5-mile section from Urquhart to the Aiken PSA tap point.",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -81.88,
+        33.43
+      ]
+    },
+    "locationQuality": "regional_marker",
+    "locationNote": "Approximate Urquhart-area marker, not the published work route.",
+    "endpoints": [],
+    "schedule": {
+      "constructionStart": null,
+      "plannedInService": "2027-12-31",
+      "note": "The public list gives an in-service target, not a construction window."
+    },
+    "source": {
+      "title": "Dominion 2025–2029 planned transmission projects",
+      "url": "https://www.scrtp.com/assets/pdfs/home/2025-2029-2million-and-above-project-descriptions.pdf",
+      "reference": "Project 37 of 47"
+    },
+    "sourceChecked": "2026-09-26"
+  },
+  {
+    "id": "DESC_OKATIE_MCINTOSH",
+    "utility": "DESC",
+    "state": "SC",
+    "name": "Okatie–McIntosh tie series reactor",
+    "description": "Planned Deerfield switching station and series reactor on the Okatie–McIntosh tie.",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -81.032495,
+        32.333758
+      ]
+    },
+    "locationQuality": "regional_marker",
+    "locationNote": "Okatie-area reference point; Deerfield's precise planned site has not been located.",
+    "endpoints": [],
+    "schedule": {
+      "constructionStart": null,
+      "plannedInService": "2028-12-31",
+      "note": "The public list gives an in-service target, not a construction window."
+    },
+    "source": {
+      "title": "Dominion 2025–2029 planned transmission projects",
+      "url": "https://www.scrtp.com/assets/pdfs/home/2025-2029-2million-and-above-project-descriptions.pdf",
+      "reference": "Project 42 of 47"
+    },
+    "sourceChecked": "2026-09-26"
+  },
+  {
+    "id": "GPC_CALLAWAY_THOMSON",
+    "utility": "GPC",
+    "state": "GA",
+    "name": "Callaway Road–Thomson 500 kV area project",
+    "description": "Two planned 500 kV lines and a new Callaway Road substation in McDuffie and Columbia counties.",
+    "geometry": {
+      "type": "MultiLineString",
+      "coordinates": [
+        [
+          [
+            -82.41269284,
+            33.45645761
+          ],
+          [
+            -82.40626089,
+            33.45875844
+          ],
+          [
+            -82.40622496,
+            33.46009997
+          ],
+          [
+            -82.40902413,
+            33.46150711
+          ],
+          [
+            -82.40902735,
+            33.46150913
+          ],
+          [
+            -82.40902842,
+            33.46151158
+          ],
+          [
+            -82.40902858,
+            33.46151209
+          ],
+          [
+            -82.41095834,
+            33.4684981
+          ],
+          [
+            -82.41095839,
+            33.46849827
+          ],
+          [
+            -82.41095953,
+            33.46850602
+          ],
+          [
+            -82.41168671,
+            33.4769307
+          ],
+          [
+            -82.41304197,
+            33.48345849
+          ],
+          [
+            -82.4130431,
+            33.48346671
+          ],
+          [
+            -82.41304313,
+            33.48346773
+          ],
+          [
+            -82.41296236,
+            33.49111038
+          ],
+          [
+            -82.41296155,
+            33.49111615
+          ],
+          [
+            -82.41296135,
+            33.49111693
+          ],
+          [
+            -82.41207238,
+            33.49415252
+          ],
+          [
+            -82.41104795,
+            33.49765039
+          ],
+          [
+            -82.40752843,
+            33.50966543
+          ],
+          [
+            -82.40752715,
+            33.50966837
+          ],
+          [
+            -82.40752619,
+            33.50966913
+          ],
+          [
+            -82.40752289,
+            33.50967125
+          ],
+          [
+            -82.39458695,
+            33.51718586
+          ],
+          [
+            -82.39458273,
+            33.5171879
+          ],
+          [
+            -82.39458235,
+            33.51718785
+          ],
+          [
+            -82.3945766,
+            33.51718643
+          ],
+          [
+            -82.37866143,
+            33.51247149
+          ],
+          [
+            -82.37865588,
+            33.51246948
+          ],
+          [
+            -82.3786519,
+            33.51246756
+          ],
+          [
+            -82.37732516,
+            33.51168248
+          ],
+          [
+            -82.37582817,
+            33.51091517
+          ]
+        ],
+        [
+          [
+            -82.41248625,
+            33.45608291
+          ],
+          [
+            -82.40723109,
+            33.45795657
+          ],
+          [
+            -82.40395506,
+            33.45541058
+          ],
+          [
+            -82.40395216,
+            33.45540877
+          ],
+          [
+            -82.40394963,
+            33.4554094
+          ],
+          [
+            -82.40394834,
+            33.45540984
+          ],
+          [
+            -82.39346355,
+            33.45931921
+          ],
+          [
+            -82.39346021,
+            33.45932083
+          ],
+          [
+            -82.39346018,
+            33.45932086
+          ],
+          [
+            -82.39345917,
+            33.45932187
+          ],
+          [
+            -82.39345709,
+            33.45932444
+          ],
+          [
+            -82.37369401,
+            33.48624541
+          ],
+          [
+            -82.37049657,
+            33.49059904
+          ],
+          [
+            -82.36720472,
+            33.4950807
+          ],
+          [
+            -82.36720272,
+            33.49508403
+          ],
+          [
+            -82.36720596,
+            33.49508605
+          ],
+          [
+            -82.37450549,
+            33.49879975
+          ],
+          [
+            -82.38059608,
+            33.50601332
+          ],
+          [
+            -82.37582817,
+            33.51091517
+          ]
+        ]
+      ]
+    },
+    "locationQuality": "published_preliminary_route",
+    "locationNote": "Two preliminary proposed alignments from Georgia Power’s public map, not field-surveyed or final work routes.",
+    "endpoints": [
+      {
+        "name": "Thomson Primary Substation",
+        "coordinates": [
+          -82.41269284,
+          33.45645761
+        ]
+      },
+      {
+        "name": "Callaway Road Substation",
+        "coordinates": [
+          -82.37582817,
+          33.51091517
+        ]
+      }
+    ],
+    "schedule": {
+      "constructionStart": null,
+      "constructionStartLabel": "Summer 2027",
+      "plannedInService": null,
+      "note": "Tentative line construction begins summer 2027; substation construction begins spring 2027. No completion date is stated."
+    },
+    "source": {
+      "title": "Georgia Power Callaway Road–Thomson project page",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/callaway-thomson.html",
+      "reference": "Project timeline and embedded preliminary route coordinates (two alignments)"
+    },
+    "sourceChecked": "2026-09-26"
+  },
+  {
+    "id": "GPC_EFFINGHAM",
+    "utility": "GPC",
+    "state": "GA",
+    "name": "Effingham County 500 kV project",
+    "description": "Planned substation and new 500 kV transmission infrastructure in Effingham County.",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -81.31,
+        32.36
+      ]
+    },
+    "locationQuality": "regional_marker",
+    "locationNote": "Broad county marker. Georgia Power says a project map is not yet available.",
+    "endpoints": [],
+    "schedule": {
+      "constructionStart": null,
+      "constructionStartLabel": "Fall 2027",
+      "plannedInService": null,
+      "note": "Substation construction tentatively begins in fall 2027; a line construction date is not published."
+    },
+    "source": {
+      "title": "Georgia Power Effingham County project page",
+      "url": "https://www.georgiapower.com/about/grid-reliability/grid-improvements/grid-projects/transmission-projects/effingham-county.html",
+      "reference": "Project timeline"
+    },
+    "sourceChecked": "2026-09-26"
+  }
+]
