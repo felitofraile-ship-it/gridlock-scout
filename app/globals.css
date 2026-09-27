@@ -378,6 +378,9 @@ html, body { background: #071923; }
 .view-map-button { background: #204d59; border-color: #5797a3; color: #c0f1f4; }
 .view-map-button:hover, .view-map-button:focus-visible { background: #2c6270; border-color: var(--grid-teal); }
 .estimate-disclosure { color: #a8e4e8; }
+.ranking-method { margin: 8px 0 12px; padding: 8px 10px; border: 1px solid #416575; border-radius: 7px; background: #193744; color: #d8ecee; font-size: .73rem; }
+.ranking-method summary { color: #a8e4e8; font-weight: 700; cursor: pointer; }
+.ranking-method p { margin: 6px 0 0; color: #c6dde0; }
 .impact-estimate { background: #33342f; border-color: #9c7750; }
 .impact-estimate .eyebrow, .impact-estimate h4, .impact-inputs label { color: #ffd6a2; }
 .impact-inputs label span { background: #182e37; border-color: #73644f; color: #eaf4f5; }

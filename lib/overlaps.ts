@@ -11,6 +11,13 @@ export type Overlap = Closest & {
   tier: "Shared reference" | "Under 1.6 km" | "Under 8 km" | "Under 40 km";
   timing: string;
   locationBasis: "Broad area marker" | "Endpoint marker" | "Straight-line routes";
+  ranking: {
+    score: number;
+    proximity: number;
+    timing: number;
+    locationConfidence: number;
+    timingBasis: string;
+  };
 };
 
 const KM_PER_DEGREE = 111.195;
@@ -77,6 +84,38 @@ function timingSignal(a: Project, b: Project): string {
   return `Targets about ${years} ${years === 1 ? "year" : "years"} apart; build windows unverified`;
 }
 
+function publishedStart(project: Project): { date: string; seasonal: boolean } | null {
+  if (project.schedule.constructionStart) return { date: project.schedule.constructionStart, seasonal: false };
+  const match = project.schedule.constructionStartLabel?.match(/^(Spring|Summer|Fall|Winter) (\d{4})$/);
+  if (!match) return null;
+  const midpoint = { Spring: "04-15", Summer: "07-15", Fall: "10-15", Winter: "01-15" }[match[1] as "Spring" | "Summer" | "Fall" | "Winter"];
+  return { date: `${match[2]}-${midpoint}`, seasonal: true };
+}
+
+function daysBetween(first: string, second: string): number {
+  return Math.abs(Date.parse(first) - Date.parse(second)) / 86_400_000;
+}
+
+function rankingFactors(a: Project, b: Project, distanceKm: number): Overlap["ranking"] {
+  // Distance is the main screening signal. Timing is weaker when only target dates exist.
+  const proximity = 70 * Math.max(0, 1 - distanceKm / 40);
+  const firstStart = publishedStart(a);
+  const secondStart = publishedStart(b);
+  let timing = 0;
+  let timingBasis = "No comparable published dates";
+  if (firstStart && secondStart) {
+    const maximum = firstStart.seasonal || secondStart.seasonal ? 12 : 20;
+    timing = maximum * Math.max(0, 1 - daysBetween(firstStart.date, secondStart.date) / 365);
+    timingBasis = firstStart.seasonal || secondStart.seasonal ? "Approximate construction-start seasons" : "Published construction starts";
+  } else if (a.schedule.plannedInService && b.schedule.plannedInService) {
+    timing = 6 * Math.max(0, 1 - daysBetween(a.schedule.plannedInService, b.schedule.plannedInService) / 730);
+    timingBasis = "In-service targets only; build windows unknown";
+  }
+  const quality = { regional_marker: 0.1, endpoint_only: 0.45, straight_line_approximation: 0.65, published_preliminary_route: 0.8 };
+  const locationConfidence = 10 * Math.min(quality[a.locationQuality], quality[b.locationQuality]);
+  return { score: proximity + timing + locationConfidence, proximity, timing, locationConfidence, timingBasis };
+}
+
 export function findOverlaps(projects: Project[]): Overlap[] {
   const desc = projects.filter((project) => project.utility === "DESC");
   const gpc = projects.filter((project) => project.utility === "GPC");
@@ -89,7 +128,8 @@ export function findOverlaps(projects: Project[]): Overlap[] {
       id: `${a.id}__${b.id}`, desc: a, gpc: b, ...closest, tier,
       timing: timingSignal(a, b),
       locationBasis: a.locationQuality === "regional_marker" || b.locationQuality === "regional_marker" ? "Broad area marker" : a.locationQuality === "endpoint_only" || b.locationQuality === "endpoint_only" ? "Endpoint marker" : "Straight-line routes",
+      ranking: rankingFactors(a, b, closest.distanceKm),
     });
   }
-  return overlaps.sort((a, b) => a.distanceKm - b.distanceKm || a.id.localeCompare(b.id));
+  return overlaps.sort((a, b) => b.ranking.score - a.ranking.score || a.distanceKm - b.distanceKm || a.id.localeCompare(b.id));
 }

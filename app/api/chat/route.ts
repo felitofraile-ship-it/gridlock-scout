@@ -66,6 +66,7 @@ function scopeFacts(scope: ChatScope) {
     facts: {
       kind: "opportunity", distanceKm: Number(overlap.distanceKm.toFixed(1)), tier: overlap.tier,
       locationBasis: overlap.locationBasis, timingSignal: overlap.timing,
+      screeningRanking: overlap.ranking,
       coordinationInterpretation: insight,
       dominionProject: projectFacts(overlap.desc), georgiaPowerProject: projectFacts(overlap.gpc),
       impact,

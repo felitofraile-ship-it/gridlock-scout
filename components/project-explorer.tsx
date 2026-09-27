@@ -93,7 +93,7 @@ export default function ProjectExplorer() {
                 <button key={overlap.id} type="button" className={`overlap-card ${selectedOverlapId === overlap.id ? "selected" : ""}`} onClick={() => selectOverlap(overlap)} aria-pressed={selectedOverlapId === overlap.id}>
                   <span className="overlap-card-top"><b>#{index + 1} · {overlap.tier}</b><strong>{overlap.distanceKm < 0.05 ? "Same reference point" : `${overlap.distanceKm.toFixed(1)} km`}</strong></span>
                   <span className="overlap-projects"><span><span className="overlap-project-name"><i className="project-dot desc" />{overlap.desc.name}</span><ProjectDate project={overlap.desc} /></span><span><span className="overlap-project-name"><i className="project-dot gpc" />{overlap.gpc.name}</span><ProjectDate project={overlap.gpc} /></span></span>
-                  <span className="overlap-label">{insight.label}</span>
+                  <span className="overlap-label">{insight.label} · {overlap.ranking.score.toFixed(1)} screening points</span>
                 </button>
               );})}
             </div>
